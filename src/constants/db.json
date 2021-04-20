@@ -1,0 +1,106 @@
+{
+  "products": {
+    "id": 0,
+    "name": "Ex",
+    "model": "IPhone 11",
+    "quantity": 4,
+    "price": 300,
+    "currency": "hrn",
+    "type": "case",
+    "sub_type": "phone",
+    "description": "lorem",
+    "in_stock": true,
+    "available": true,
+    "photos": []
+  },
+  "device": {
+    "IX":{
+      "model": "IPhone",
+      "type": "X"
+    },
+    "IXR": {
+      "manufacturer": "Apple",
+      "os": "IOS",
+      "model": "IPhone",
+      "type": "XR"
+    },
+    "IXS": {
+      "manufacturer": "Apple",
+      "os": "IOS",
+      "model": "IPhone",
+      "type": "XS"
+    },
+    "IXSM" : {
+      "manufacturer": "Apple",
+      "os": "IOS",
+      "model": "IPhone",
+      "type": "XS Max"
+    },
+    "I11": {
+      "manufacturer": "Apple",
+      "os": "IOS",
+      "model": "IPhone",
+      "type": "11"
+    },
+    "I11P": {
+      "manufacturer": "Apple",
+      "os": "IOS",
+      "model": "IPhone",
+      "type": "11 Pro"
+    },
+    "I11PM": {
+      "manufacturer": "Apple",
+      "os": "IOS",
+      "model": "IPhone",
+      "type": "11 Pro Max"
+    },
+    "I12M": {
+      "manufacturer": "Apple",
+      "os": "IOS",
+      "model": "IPhone",
+      "type": "12 mini"
+    },
+    "I12": {
+      "manufacturer": "Apple",
+      "os": "IOS",
+      "model": "IPhone",
+      "type": "12"
+    },
+    "I12P": {
+      "manufacturer": "Apple",
+      "os": "IOS",
+      "model": "IPhone",
+      "type": "12 Pro"
+    },
+    "I12PM": {
+      "manufacturer": "Apple",
+      "os": "IOS",
+      "model": "IPhone",
+      "type": "12 Pro Max"
+    },
+    "AP_1g": {
+      "manufacturer": "Apple",
+      "os": "",
+      "model": "AirPods",
+      "type": "1st generation"
+    },
+    "AP_2g": {
+      "manufacturer": "Apple",
+      "os": "",
+      "model": "AirPods",
+      "type": "2st generation"
+    },
+    "APP": {
+      "manufacturer": "Apple",
+      "os": "",
+      "model": "AirPods",
+      "type": "Pro"
+    },
+    "APM": {
+      "manufacturer": "Apple",
+      "os": "",
+      "model": "AirPods",
+      "type": "Max"
+    }
+  }
+}
