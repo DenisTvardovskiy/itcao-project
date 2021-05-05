@@ -1,0 +1,29 @@
+.constructor_section{
+    margin: 60px 150px 60px 0 ;
+    padding: 60px 150px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 700px;
+    flex-wrap: wrap;
+    border-radius: 0 150px 150px 0 ;
+    background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
+    background-size: 1800% 1800%;
+    color: white;
+    text-decoration: none;
+    -webkit-animation: rainbow 18s ease infinite;
+    -z-animation: rainbow 18s ease infinite;
+    -o-animation: rainbow 18s ease infinite;
+    animation: rainbow 18s ease infinite;
+}
+
+.constructor_section .info-side > a{
+    background-color: white;
+}
+
+
+.constructor_section .show{
+    width: 450px;
+    height: 450px;
+    background-color: white ;
+}

@@ -2,6 +2,7 @@ import {BrowserRouter as Router, Link, Route, Switch} from "react-router-dom";
 import StorePage from "../Store/store";
 import Home from "../Home/home";
 import "./style.css"
+import Constructor from "../Constructor/Constructor";
 
 function NavigationBar(){
     return(
@@ -26,10 +27,17 @@ function NavigationBar(){
                 </nav>
 
                 <Switch>
+                    <Route path="/constructor">
+                        <Constructor />
+                    </Route>
                     <Route path="/store">
                         <StorePage />
                     </Route>
                     <Route path="/">
+                        <Home />
+                    </Route>
+
+                    <Route path="/cart">
                         <Home />
                     </Route>
                 </Switch>
