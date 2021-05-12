@@ -1,4 +1,5 @@
 nav{
+    z-index: 999;
     height: 50px;
     width: 100%;
     position: fixed;
@@ -273,4 +274,67 @@ nav div>h1{
 .ProceedButton:hover{
     color: black;
     border: 1px solid black;
+}
+
+.form-container{
+    width: 100%;
+
+    background-color: white;
+    border: 1px solid black;
+    list-style: none;
+    margin: 40px 0 0 0;
+    padding: 0;
+
+
+}
+.cart_body{
+    height: 400px;
+}
+.form-container > li{
+    height: 50px;
+
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 15px;
+    align-items: center;
+}
+
+
+.form-container > li > button{
+    min-width: 120px;
+    padding: 0;
+    color: black;
+    border: 2px solid black;
+}
+.close-modal{
+    outline: none;
+    background-color: white;
+    border: none;
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 2rem;
+
+}
+.product-details{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-details img{
+    width: 30rem;
+    flex: 1;
+}
+.product-details-description .product-price{
+    display: flex;
+    justify-content: flex-start !important;
+}
+.product-price .buttonModal{
+    max-width: 200px;
+    font-size: 1rem;
+    margin: 0 0 0 10px;
+}
+.product-price div, .product-price button{
+    flex: none;
 }

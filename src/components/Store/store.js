@@ -14,18 +14,33 @@ class StorePage extends React.Component {
         this.state= {
             products: db.products,
             device: db.device,
-            cartItems: [],
+            cartItems: JSON.parse(localStorage.getItem("cartItems"))? JSON.parse(localStorage.getItem("cartItems")):[],
             model: "",
             price: "",
             sort: "",
+            showCart: false
             }
         }
+
+        cartModal(){
+        if(this.state.showCart){
+            this.setState({showCart:false})
+        }else{
+            this.setState({showCart:true})
+        }
+        }
+
+    createOrder = (order) =>{
+        alert("Need to save order for" + order.name)
+    }
+
     removeFromCart = (product) =>{
         const cartItems = this.state.cartItems.slice()
 
         this.setState({
             cartItems: cartItems.filter((x)=> x.id !== product.id)
         })
+        localStorage.setItem("cartItems", JSON.stringify(cartItems.filter((x)=> x.id !== product.id)))
     }
     addToCart = (product) =>{
         const cartItems = this.state.cartItems.slice();
@@ -40,6 +55,7 @@ class StorePage extends React.Component {
             cartItems.push({...product, count: 1})
         }
         this.setState({cartItems})
+        localStorage.setItem("cartItems", JSON.stringify(cartItems))
     }
 
     sortProducts = (event) =>{
@@ -93,7 +109,7 @@ class StorePage extends React.Component {
                         <h1>Case Pile</h1>
                     </div>
                     <div className="cart navSector">
-                        <div className="cart-link">Cart {this.state.cartItems.length}</div>
+                        <div onClick={()=>this.cartModal()} className="cart-link">Cart {this.state.cartItems.length}</div>
                     </div>
 
 
@@ -113,14 +129,18 @@ class StorePage extends React.Component {
                     <Products products = {this.state.products} addToCart={this.addToCart}/>
                 </div>
 
+                {this.state.showCart && (
+                    <div className="modal_root">
+                        <Cart cartItems = {this.state.cartItems}
+                              removeFromCart = {this.removeFromCart}
+                              createOrder = {this.createOrder}/>
+                    </div>
+                )}
 
-                <div className="modal_root">
-                        <Cart cartItems = {this.state.cartItems} removeFromCart = {this.removeFromCart}/>
-                </div>
             </section>
 
         );
-    }
-}
+    };
+};
 
 export default StorePage;

@@ -11,7 +11,7 @@
     "currency": "hrn",
     "type": "case",
     "sub_type": "phone",
-    "description": "lorem",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse egestas erat condimentum, aliquet nisl at, suscipit turpis. Aenean nec iaculis risus. Phasellus et odio at nulla blandit laoreet sit amet quis augue. Pellentesque nec metus leo. Nulla luctus egestas turpis, et imperdiet mi lacinia venenatis. Curabitur pellentesque ornare ante nec convallis. Sed auctor hendrerit condimentum. Suspendisse dignissim, sapien quis iaculis sodales, arcu tortor blandit urna, sed sagittis turpis arcu non mauris. Suspendisse dignissim velit in scelerisque sollicitudin. Praesent facilisis ante eget libero faucibus consectetur. Aliquam fermentum felis sed viverra vulputate. Quisque fringilla facilisis diam et lobortis. Duis cursus ornare blandit. Fusce ac urna ut arcu efficitur fringilla commodo vel odio. ",
     "capability": ["I11P"],
     "in_stock": true,
     "available": true
@@ -28,7 +28,7 @@
       "currency": "hrn",
       "type": "case",
       "sub_type": "phone",
-      "description": "lorem ipsum",
+      "description": "Suspendisse potenti. Curabitur finibus tortor sed nunc gravida rhoncus. Vivamus efficitur cursus est, quis maximus lacus ornare et. Etiam vitae diam euismod, feugiat ex quis, fermentum ante. Maecenas tincidunt quis justo in euismod. Vestibulum pulvinar vel sem finibus tempus. Vivamus mollis ac arcu a tincidunt. Sed ultricies ligula id volutpat mollis. ",
       "capability": ["IX","I11", "I12"],
       "in_stock": true,
       "available": true
@@ -45,8 +45,8 @@
       "currency": "hrn",
       "type": "case",
       "sub_type": "phone",
-      "description": "lorem",
-      "capability": ["IX","I11", "I12"],
+      "description": " Vivamus est urna, malesuada vel metus ut, elementum hendrerit neque. Etiam id accumsan tortor. Quisque non nibh lorem. Pellentesque placerat ac odio maximus semper. Aenean vulputate dui diam, auctor scelerisque neque finibus a. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque ac felis ipsum. Integer euismod eros ac volutpat eleifend. Sed leo eros, dictum vel lorem vel, tincidunt tempus mauris. ",
+      "capability": ["IX", "I12"],
       "in_stock": true,
       "available": true
 
@@ -62,7 +62,7 @@
       "currency": "hrn",
       "type": "case",
       "sub_type": "phone",
-      "description": "lorem",
+      "description": "Aliquam scelerisque diam arcu, non ullamcorper orci mollis sit amet. Praesent ultrices leo id euismod pretium. Vestibulum hendrerit dolor eu risus pellentesque cursus. Ut at urna consectetur, pretium arcu vel, venenatis tortor. Morbi pretium tellus ac faucibus auctor. Curabitur lacus arcu, tempus a urna eu, mollis blandit tortor. Pellentesque facilisis tincidunt lorem ut finibus. Fusce in urna sit amet erat luctus imperdiet eget non arcu. Fusce condimentum, enim vitae fermentum commodo, enim ante lacinia elit, vel tempus odio quam a nunc. ",
       "capability": ["IX","I11", "I12"],
       "in_stock": true,
       "available": true
@@ -79,8 +79,8 @@
       "currency": "hrn",
       "type": "case",
       "sub_type": "phone",
-      "description": "lorem",
-      "capability": ["IX","I11", "I12"],
+      "description": "Integer a tincidunt lorem. Nam sollicitudin quam maximus cursus accumsan. Nulla tempus et risus a pellentesque. Nunc eu consectetur massa. Duis hendrerit tortor ultrices felis ultrices euismod. Maecenas odio nunc, ornare non cursus ac, bibendum et nunc. Praesent viverra in urna consectetur consectetur. Phasellus convallis iaculis nisl. Curabitur in sagittis augue, porttitor laoreet magna. Etiam sed placerat libero, sed vulputate ligula. Donec consectetur nisl quam, ac dapibus nibh finibus a. ",
+      "capability": ["IX","I11"],
       "in_stock": true,
       "available": true
 
@@ -96,23 +96,23 @@
       "currency": "hrn",
       "type": "case",
       "sub_type": "phone",
-      "description": "lorem",
-      "capability": ["IX","I11", "I12"],
+      "description": " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec ultrices sapien, in laoreet metus. Duis sit amet lacus eu enim luctus ornare. Donec nec nunc vestibulum, dignissim nibh in, convallis elit. Duis at iaculis nibh, et ornare neque. Sed at odio vel tortor mattis egestas vitae ac sapien. Mauris accumsan convallis ex at semper. Mauris tristique mi eu ornare consequat. Vivamus pulvinar pretium luctus. Quisque lobortis metus augue. Vivamus consectetur est justo, a suscipit felis imperdiet sed. Vivamus congue pulvinar est ac ornare. Donec aliquam non metus sed placerat. ",
+      "capability": ["I12M", "I12"],
       "in_stock": true,
       "available": true
     },
     {
       "id": 6,
-      "name": "GameBoy Case",
+      "name": "Goubo Case",
       "model": "IPhone 11",
       "device": "I11",
-      "image": "./assets/waves.png",
+      "image": "./assets/pwdp-edition-gra.png",
       "quantity": 0,
       "price": 300,
       "currency": "hrn",
       "type": "case",
       "sub_type": "phone",
-      "description": "lorem",
+      "description": "Pellentesque quis ante fringilla tellus sollicitudin lobortis. Nulla rutrum gravida ipsum, in volutpat odio dapibus sed. In hac habitasse platea dictumst. Aliquam pretium feugiat felis sed tempus. Aenean dapibus fringilla nisi, ac ullamcorper lacus varius ac. Donec ac cursus tortor. Curabitur tortor justo, commodo sed pretium vel, mollis ac purus. In eget laoreet lectus. Mauris efficitur at augue vitae pharetra. Etiam condimentum leo vitae mi aliquet, ut rhoncus mi aliquam. Aenean convallis velit feugiat sem accumsan, sed dapibus nisl aliquet. Nunc non felis ligula. ",
       "capability": ["IX","I11", "I12"],
       "in_stock": true,
       "available": true
@@ -128,8 +128,8 @@
       "currency": "hrn",
       "type": "case",
       "sub_type": "phone",
-      "description": "lorem",
-      "capability": ["IX","I11", "I12"],
+      "description": "Suspendisse non cursus leo, in mattis lacus. Sed nisi felis, scelerisque at luctus sit amet, vehicula et ante. Sed vitae bibendum nunc, a tempus massa. Phasellus quis sem hendrerit, egestas felis at, auctor orci. Curabitur vulputate, dolor eu luctus tempus, lorem nunc hendrerit risus, vitae vulputate velit purus eget sapien. Fusce cursus eros at tempus pharetra. Etiam viverra orci sed mauris tincidunt efficitur. Sed ac sem a elit scelerisque varius at ac quam. Ut blandit vehicula faucibus. Duis pretium sed diam nec imperdiet. Nam rutrum ac turpis sit amet venenatis. Maecenas vestibulum nibh massa, id luctus lectus tincidunt in. ",
+      "capability": ["IX","IXS"],
       "in_stock": true,
       "available": true
     }
