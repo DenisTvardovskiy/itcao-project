@@ -1,7 +1,6 @@
 import React from 'react'
 import {Link} from "react-router-dom";
-import './style.css'
-import pic from "../../../../src/assets/external-content.png"
+
 
 function PhoneCases() {
     return (
@@ -11,7 +10,7 @@ function PhoneCases() {
                     <Link to="/store">Get it now</Link>
                 </div>
                 <div className="sec pc_photo">
-                    <img src={pic} />
+
 
                 </div>
         </section>
