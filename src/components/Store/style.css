@@ -9,7 +9,8 @@
 }
 
 .Filters{
-    width: 30%;
+    max-width: 300px;
+    box-sizing: border-box;
     border-right: 1px solid black;
 }
 
@@ -82,4 +83,30 @@
 .button:hover{
     background: black;
     color: white;
+}
+
+
+.filter-result{
+    text-align: center;
+    padding: 30px 0 ;
+    text-decoration: underline;
+    border-bottom:1px solid black ;
+}
+
+.filter-sort{
+    padding: 30px 15px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+.filter-model{
+    padding: 30px 15px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.filter-model select, .filter-sort select{
+    margin: 0 0 0 10px;
 }
