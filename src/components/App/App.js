@@ -1,12 +1,12 @@
 import React from 'react'
-import NavigationBar from "../Navigation/navigation";
 import "./style.css"
+import StorePage from "../Store/store";
 
 
 function App() {
   return (
 
-        <NavigationBar/>
+        <StorePage/>
 
 
   );

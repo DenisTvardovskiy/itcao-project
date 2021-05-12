@@ -4,6 +4,8 @@ import "./style.css"
 import db from "../../db.json";
 import Products from "./products";
 import Filter from "./filter";
+import Cart from "./cart";
+
 
 
 class StorePage extends React.Component {
@@ -12,11 +14,34 @@ class StorePage extends React.Component {
         this.state= {
             products: db.products,
             device: db.device,
+            cartItems: [],
             model: "",
             price: "",
             sort: "",
             }
         }
+    removeFromCart = (product) =>{
+        const cartItems = this.state.cartItems.slice()
+
+        this.setState({
+            cartItems: cartItems.filter((x)=> x.id !== product.id)
+        })
+    }
+    addToCart = (product) =>{
+        const cartItems = this.state.cartItems.slice();
+        let alreadyInCart = false;
+        cartItems.forEach((item) => {
+            if (item.id === product.id) {
+                item.count++;
+                alreadyInCart = true;
+            }
+        });
+        if(!alreadyInCart ){
+            cartItems.push({...product, count: 1})
+        }
+        this.setState({cartItems})
+    }
+
     sortProducts = (event) =>{
         console.log(event.target.value)
         const sort = event.target.value;
@@ -58,7 +83,22 @@ class StorePage extends React.Component {
 
     render() {
         return (
+
             <section className="store_section">
+                <nav>
+                    <div className="navSector">
+
+                    </div>
+                    <div className="navSector">
+                        <h1>Case Pile</h1>
+                    </div>
+                    <div className="cart navSector">
+                        <div className="cart-link">Cart {this.state.cartItems.length}</div>
+                    </div>
+
+
+
+                </nav>
                 <div className="Filters">
                     <Filter
                         device = {this.state.device}
@@ -70,12 +110,12 @@ class StorePage extends React.Component {
                     />
                 </div>
                 <div className="Store">
-                    <Products products = {this.state.products}/>
+                    <Products products = {this.state.products} addToCart={this.addToCart}/>
                 </div>
 
 
                 <div className="modal_root">
-
+                        <Cart cartItems = {this.state.cartItems} removeFromCart = {this.removeFromCart}/>
                 </div>
             </section>
 
