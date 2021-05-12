@@ -8,6 +8,7 @@ import Cart from "./cart";
 
 
 
+
 class StorePage extends React.Component {
     constructor(props) {
         super(props);
@@ -18,6 +19,8 @@ class StorePage extends React.Component {
             model: "",
             price: "",
             sort: "",
+            input: '',
+            setInput: '',
             showCart: false
             }
         }
@@ -96,13 +99,22 @@ class StorePage extends React.Component {
 
     }
 
+    updateInput(event){
+        this.setState({input: event.target.value.substr(0,20)});
+        console.log(event.target.value)
+    }
+
 
     render() {
+        const filtered = this.state.products.filter(country => {
+            return country.name.toLowerCase().indexOf(this.state.input.toLowerCase()) !==-1;
+        })
         return (
 
             <section className="store_section">
                 <nav>
                     <div className="navSector">
+
 
                     </div>
                     <div className="navSector">
@@ -116,6 +128,7 @@ class StorePage extends React.Component {
 
                 </nav>
                 <div className="Filters">
+                    <input className="searchBar" type="text" placeholder="Search..." value={this.state.input} onChange={this.updateInput.bind(this)} />
                     <Filter
                         device = {this.state.device}
                         count={this.state.products.length}
@@ -126,7 +139,7 @@ class StorePage extends React.Component {
                     />
                 </div>
                 <div className="Store">
-                    <Products products = {this.state.products} addToCart={this.addToCart}/>
+                    <Products products = {filtered} addToCart={this.addToCart}/>
                 </div>
 
                 {this.state.showCart && (
@@ -141,6 +154,6 @@ class StorePage extends React.Component {
 
         );
     };
-};
+}
 
 export default StorePage;

@@ -328,7 +328,7 @@ nav div>h1{
 }
 .product-details-description .product-price{
     display: flex;
-    justify-content: flex-start !important;
+    justify-content: flex-start ;
 }
 .product-price .buttonModal{
     max-width: 200px;
@@ -337,4 +337,18 @@ nav div>h1{
 }
 .product-price div, .product-price button{
     flex: none;
+}
+
+.searchBar{
+    border-radius: 0;
+    background: white;
+    width: 100%;
+    border: none;
+    box-sizing: border-box;
+    padding: 5px 5px;
+    border-bottom: 1px solid black;
+    outline: none;
+
+    margin: 0;
+    font-size: 1.4rem;
 }
